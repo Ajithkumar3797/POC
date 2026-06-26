@@ -22,7 +22,7 @@ public class IBMQuantumSimulatorPOC {
          double[][] distanceMatrix = fetchLocations(conn, pickIds);
          conn.close();
         // Step 1️⃣ - Your IBM Cloud API key (not the IBM Quantum platform token)
-        String apiKey = "5KecaRUFEf8va8KCkkIPGZgWIJq4KLh5vMUs6Th4yRgD";
+        String apiKey = "";
 
         // Step 2️⃣ - Get IAM access token
         String iamTokenEndpoint = "https://iam.cloud.ibm.com/identity/token";
@@ -76,9 +76,9 @@ public class IBMQuantumSimulatorPOC {
     }
     
     public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://192.168.10.13/promoerpmaster";
+        String url = "jdbc:mysql://local/promoerpmaster";
         String user = "test";
-        String password = "C@$1n0@123";
+        String password = "test";
         return DriverManager.getConnection(url, user, password);
     }
     public static double[][] fetchLocations(Connection conn, int[] pickIds) throws SQLException {
