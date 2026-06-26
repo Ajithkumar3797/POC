@@ -12,9 +12,9 @@ import org.json.JSONObject;
 public class GetJob {
 	public static void main(String[] args) throws Exception {
 
-		String apiKey = "5KecaRUFEf8va8KCkkIPGZgWIJq4KLh5vMUs6Th4yRgD";
+		String apiKey = "";
 		String token = getIBMIAMToken(apiKey);
-		JSONObject result = getJobResult(token, "d445ljo7i53s73e4o4og");
+		JSONObject result = getJobResult(token, "");
 		System.out.println("Optimized picker route: " + result.toString());
 	}
 
