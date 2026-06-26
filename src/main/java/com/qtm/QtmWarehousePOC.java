@@ -12,7 +12,7 @@ public class QtmWarehousePOC {
 
     public static void main(String[] args) throws Exception {
 
-        String apiKey = "5KecaRUFEf8va8KCkkIPGZgWIJq4KLh5vMUs6Th4yRgD"; // IBM Quantum API Key
+        String apiKey = ""; // IBM Quantum API Key
         String serviceCrn = "crn:v1:bluemix:public:quantum-computing:us-east:a/e9096ec3d4bd4c438df3c045993ecf6a:143010f1-ec76-4224-9683-ae20c39a4173::"; // Quantum Runtime CRN
         String backend = "ibm_fez"; // or ibmq_qasm_simulator
 
