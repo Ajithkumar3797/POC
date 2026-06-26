@@ -19,9 +19,9 @@ public class WarehouseQuantumPOC {
 
     // --- 1. Database connection ---
     public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://192.168.10.13/promoerpmaster";
+        String url = "jdbc:mysql://test/promoerpmaster";
         String user = "test";
-        String password = "C@$1n0@123";
+        String password = "test";
         return DriverManager.getConnection(url, user, password);
     }
 
@@ -132,7 +132,7 @@ public class WarehouseQuantumPOC {
         Connection conn = getConnection();
 //        double[][] distanceMatrix = fetchLocations(conn, pickIds);
         conn.close();
-        String apiKey = "5KecaRUFEf8va8KCkkIPGZgWIJq4KLh5vMUs6Th4yRgD";
+        String apiKey = "";
         String token = getIBMIAMToken(apiKey);
         String jobId = submitTSPJob(token);
         System.out.println("Submitted job, ID: " + jobId);
